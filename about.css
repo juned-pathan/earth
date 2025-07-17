@@ -1,0 +1,108 @@
+body{
+    padding: 0;
+    margin:0;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:35px;
+}
+
+#header-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 8px;
+    
+}
+h2{
+background: linear-gradient(blue,green,white);
+background-clip: text;
+color:transparent;
+
+}
+h1{
+background: linear-gradient(blue,green,white);
+background-clip: text;
+color:transparent;
+
+}
+#anchor{
+    display: flex;
+    column-gap: 45px;
+    font-size: 20px;
+    
+    text-decoration: none;
+}
+img:hover{
+    cursor: url("llogo-removebg-preview.png"),auto;
+}
+a{
+    
+    text-decoration: none;
+
+}
+a:hover{
+    font-size: 24px;
+}
+#main{
+    padding: 13px;
+}
+#first{
+display: flex;
+align-items: center;
+height: 300px;
+justify-content: space-between;
+border: 2px solid black;
+background-color: rgba(51, 47, 47, 0.075);
+padding: 50px;
+border-bottom-right-radius: 30px;
+border-top-left-radius: 30px;
+}
+#para1{
+    display: flex;
+    padding: 20px;
+    text-align: justify;
+    font-size: 24px;
+}
+#first-image
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+#second{
+display: flex;
+align-items: center;
+height: 300px;
+justify-content: space-between;
+border: 2px solid black;
+background-color: rgba(51, 47, 47, 0.075);
+padding: 25px;
+border-bottom-right-radius: 30px;
+border-top-left-radius: 30px;
+}
+#para2{
+    display: flex;
+    padding: 20px;
+    text-align: justify;
+    font-size: 24px;
+}
+#second-image
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer{
+   color: white;
+    background-color: black;
+}

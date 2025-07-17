@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-image: url('contact.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 100vh;
+      color: white;
+    }
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:35px;
+}
+img:hover{
+    cursor: url("llogo-removebg-preview.png"),auto;
+}
+
+#header-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 8px;
+    
+}
+h2{
+background: linear-gradient(blue,green,white);
+background-clip: text;
+color:transparent;
+
+}
+#anchor{
+    display: flex;
+    column-gap: 45px;
+    font-size: 21px;
+   
+}
+a{  color: white;
+     text-decoration: none;
+    
+}
+a:hover{
+     font-size: 24px;
+     color:blue;
+     cursor: pointer;
+}
+    #pages {
+      display: flex;
+      justify-content: flex-end;
+      gap: 35px;
+    }
+
+    button {
+      font-size: 18px;
+      background: transparent;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    form {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    label {
+      font-size: 18px;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input.square,
+    textarea.square {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid white;
+      border-radius: 8px;
+      background-color: transparent;
+      color: white;
+    }
+
+    input.square::placeholder,
+    textarea.square::placeholder {
+      color: lightgray;
+    }
+
+    textarea.square {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    #submit {
+      padding: 12px;
+      font-size: 18px;
+      background-color: rgba(0, 0, 255, 0.8);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #submit:hover {
+      background-color: rgba(0, 0, 255, 1);
+    }
+
+    @media (max-width: 600px) {
+      form {
+        padding: 20px;
+        width: 90%;
+      }
+
+      button {
+        font-size: 16px;
+      }
+
+      label {
+        font-size: 16px;
+      }
+
+      input.square,
+      textarea.square {
+        font-size: 14px;
+      }
+
+      #submit {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="header">
+            <div id="header-logo">
+                <img src="logo.png" width="30">
+                <h2>EARTH</h2>
+        </div>
+        <div id="anchor">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="#">CONTACTS</a>
+            <a href="#">SERVICES</a>
+            </div>
+        </header>
+        <hr>
+  <hr />
+  <main>
+    <form>
+      <h1>Contact Us</h1>
+
+      <div>
+        <label for="fname">First Name:</label>
+        <input class="square" type="text" id="fname" name="fname" placeholder="Enter your name" required />
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input class="square" type="email" id="email" name="email" placeholder="Enter your email" required />
+      </div>
+
+      <div>
+        <label for="mob">Mobile:</label>
+        <input class="square" type="tel" id="mob" name="mob" placeholder="Enter your number" required />
+      </div>
+
+      <div>
+        <label for="message">Message:</label>
+        <textarea class="square" id="message" name="message" placeholder="Your message" required></textarea>
+      </div>
+
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </main>
+</body>
+</html>
